@@ -1,0 +1,16 @@
+body{
+	background-color: gray !important;
+}
+
+.left-rail{
+	background-color: yellow !important;
+}
+
+.right-rail{
+	background-color: red !important;
+}
+
+.core-rail{
+	background-color: green !important;
+}
+

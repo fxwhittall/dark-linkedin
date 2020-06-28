@@ -7,11 +7,11 @@
     "default_popup": "./index.html",
     "default_title": "LinkedIn Dark Mode",
     "default_icon":"./icon16.png"
-  }
-  // "content_scripts": [
-  //     {
-  //         "js": ["content.js"],
-  //         "matches": ["http://*linkedin.com/*"]
-  //     }
-  // ]
+  },
+  "content_scripts": [
+      {
+          "css": ["content.css"],
+          "matches": ["https://*.linkedin.com/*"]
+      }
+  ]
 }
