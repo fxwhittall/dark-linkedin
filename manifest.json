@@ -13,5 +13,8 @@
           "css": ["content.css"],
           "matches": ["https://*.linkedin.com/*"]
       }
+  ],
+  "permissions": [
+  		"tabs"
   ]
 }
