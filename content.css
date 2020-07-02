@@ -2,8 +2,16 @@ body{
 	background-color: #353535 !important;
 }
 
-p{
+a{
 	color: white;
+}
+
+.entity-item{
+	background-color: gray !important;s
+}
+
+.see-more, .discover-entity-card{
+	background-color: gray !important;
 }
 
 .social-update-social-activity{
