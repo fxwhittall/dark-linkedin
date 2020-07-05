@@ -2,8 +2,9 @@ body{
 	background-color: #353535 !important;
 }
 
-a{
-	color: white;
+/*most text in feed*/
+.break-words{
+	color: #ccc;
 }
 
 /*see more buttons throughout*/
@@ -13,7 +14,7 @@ a{
 
 /*be the first to comment block*/
 .feed-shared-first-prompt-block{
-	background-color: cyan !important;
+	background-color: #aaaaaa !important;
 }
 
 /*boxes in feed, boxes in boxes, comments background, buttons, social buttons, make a post box*/
