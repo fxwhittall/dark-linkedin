@@ -1,9 +1,19 @@
-var mode = document.getElementById("color-box");
+const mode = document.getElementById("color-box");
+const title = document.getElementById("color-title");
+let checked = chrome.storage.local.get(['checked'], () => {
+	changeStylesheet(checked);
+});
+
 mode.addEventListener('click', () => {
-	if(mode.checked === true){
-		document.getElementById("color-title").innerHTML = "Toggle normal mode";
+	changeStylesheet(mode.checked);
+});
+
+function changeStylesheet(chk){
+	if(chk){
+		title.innerHTML = "Toggle Normal Mode";
 	}
 	else{
-		document.getElementById("color-title").innerHTML = "Toggle dark mode";
+		title.innerHTML = "Toggle Dark Mode";
 	}
-});
+	chrome.storage.local.set({checked: chk});
+}
