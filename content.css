@@ -7,6 +7,10 @@ body{
 	color: #ccc;
 }
 
+.mb2{
+	color: #ccc;
+}
+
 /*most text in buttons*/
 .artdeco-button__text{
 	color: #ccc;
@@ -57,7 +61,7 @@ body{
 	background-color: #444;
 }
 
-/*notification card on notifications page*/
-.nt-card{
+/*left box, headers of noticiations, notification card on notifications page*/
+.nt-notifications-heading, .nt-segment, .nt-card{
 	background-color: #444 !important;
 }
