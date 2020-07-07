@@ -18,4 +18,12 @@ function changeStylesheet(chk){
 		title.innerHTML = "Toggle Dark Mode";
 	}
 	chrome.storage.local.set({checked: chk});
+	chrome.tabs.query({
+		url: 'https://*.linkedin.com/*'
+	}, 
+	(tabs) => {
+		tabs.forEach(tab =>
+			chrome.tabs.sendMessage(tab.id, {input: chk})
+		);
+	});
 }
