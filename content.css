@@ -7,6 +7,7 @@ body{
 	color: #ccc;
 }
 
+/*text*/
 .mb2{
 	color: #ccc;
 }
@@ -36,6 +37,8 @@ body{
 	background-color: #444 !important;
 }
 
+
+
 /*card with face, information beneath it*/
 .feed-identity-module, .entity-item{
 	background-color: #444 !important;
@@ -64,4 +67,14 @@ body{
 /*left box, headers of noticiations, notification card on notifications page*/
 .nt-notifications-heading, .nt-segment, .nt-card{
 	background-color: #444 !important;
+}
+
+/*message sidebar, main convo, typing area*/
+.msg-conversations-container, .msg-thread, .msg-form{
+	background-color: #444 !important;
+}
+
+/*hovercard*/
+.entity-hovercard{
+	background-color: #aaa !important;
 }
