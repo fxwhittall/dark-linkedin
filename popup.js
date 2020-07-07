@@ -1,7 +1,9 @@
 const mode = document.getElementById("color-box");
 const title = document.getElementById("color-title");
-let checked = chrome.storage.local.get(['checked'], () => {
-	changeStylesheet(checked);
+
+chrome.storage.local.get(['checked'], (response) => {
+	mode.checked = response.checked;
+	changeStylesheet(response.checked);
 });
 
 mode.addEventListener('click', () => {
