@@ -23,7 +23,7 @@ function changeStylesheet(chk){
 	}, 
 	(tabs) => {
 		tabs.forEach(tab =>
-			chrome.tabs.sendMessage(tab.id, {input: chk})
+			chrome.tabs.insertCSS(tab.id, {file: "./content.css"})
 		);
 	});
 }

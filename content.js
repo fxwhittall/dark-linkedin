@@ -1,8 +1,8 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 	if(message.input){
-		alert('Dark mode on');
+ 		document.body.style.backgroundColor = black;
 	}
-	else alert('Dark mode off');
+	else document.body.style.backgroundColor = white;
 });
 
 // function changeColor(dark){

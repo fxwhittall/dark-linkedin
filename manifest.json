@@ -10,13 +10,13 @@
   },
   "content_scripts": [
       {
-          "css": ["content.css"],
           "js": ["content.js"],
           "matches": ["https://*.linkedin.com/*"]
       }
   ],
   "permissions": [
   		"tabs",
-      "storage"
+      "storage",
+      "https://*.linkedin.com/*"
   ]
 }
