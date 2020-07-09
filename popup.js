@@ -23,7 +23,16 @@ function changeStylesheet(chk){
 	}, 
 	(tabs) => {
 		tabs.forEach(tab =>
-			chrome.tabs.insertCSS(tab.id, {file: "./content.css"})
+			helper(tab, chk)
 		);
 	});
+}
+
+function helper(tab, chk){
+	if(chk){
+		chrome.tabs.insertCSS(tab.id, {file: "./content.css"});
+	}
+	else {
+		chrome.tabs.insertCSS(tab.id, {file: "./empty.css"});
+	}
 }
