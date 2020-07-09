@@ -30,9 +30,6 @@ function changeStylesheet(chk){
 
 function helper(tab, chk){
 	if(chk){
-		chrome.tabs.insertCSS(tab.id, {file: "./content.css"});
-	}
-	else {
-		chrome.tabs.insertCSS(tab.id, {file: "./empty.css"});
+		chrome.tabs.insertCSS({file: "./content.css"});
 	}
 }
