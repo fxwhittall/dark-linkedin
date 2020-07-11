@@ -23,14 +23,7 @@ function changeStylesheet(chk){
 	}, 
 	(tabs) => {
 		tabs.forEach(tab =>
-			helper(tab, chk)
+			chrome.tabs.sendMessage(tab.id, {checked: chk})
 		);
 	});
-}
-
-function helper(tab, chk){
-	if(chk){
-		//this will need to be changed - move to content.js
-		chrome.tabs.insertCSS({file: "./content.css"});
-	}
 }

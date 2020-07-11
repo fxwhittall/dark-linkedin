@@ -10,6 +10,7 @@
   },
   "content_scripts": [
       {
+          "css": ["./content.css"],
           "js": ["third-party/jquery-3.5.1.js", "content.js"],
           "matches": ["https://*.linkedin.com/*"]
       }
@@ -17,6 +18,7 @@
   "permissions": [
   		"tabs",
       "storage",
-      "https://*.linkedin.com/*"
+      "https://*.linkedin.com/*",
+      "activeTab"
   ]
 }
