@@ -10,7 +10,7 @@
   },
   "content_scripts": [
       {
-          "js": ["content.js"],
+          "js": ["third-party/jquery-3.5.1.js", "content.js"],
           "matches": ["https://*.linkedin.com/*"]
       }
   ],
