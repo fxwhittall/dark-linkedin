@@ -1,0 +1,1 @@
+$('head').append('<link href="/content.css" rel="stylesheet" id="newcss" />');

@@ -1,14 +1,15 @@
 //upon load
 chrome.storage.local.get('checked', (response) => {
  	if(!response.checked){
- 		chrome.activeTab.executeScript({file: "./theme-switch.js"});
+ 		chrome.tabs.executeScript({file: "./theme-switch-dark.js"});
  	}
+ 	else chrome.tabs.executeScript({file: "./theme-switch-light.js"});
  });
 
 //when switch changes
 chrome.runtime.onMessage.addListener((message, callback) => {
 	if(message.checked){
-		alert("switch flipped dark");
+		chrome.tabs.executeScript({file: "./theme-switch-dark.js"});
 	}
-	else alert("switch flipped light");
+ 	else chrome.tabs.executeScript({file: "./theme-switch-light.js"});
 });

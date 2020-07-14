@@ -8,9 +8,11 @@
     "default_title": "LinkedIn Dark Mode",
     "default_icon":"./icon16.png"
   },
+  "background" :{
+    "scripts": ["third-party/jquery-3.5.1.js", "background.js"]
+  },
   "content_scripts": [
       {
-          "css": ["./content.css"],
           "js": ["third-party/jquery-3.5.1.js", "content.js"],
           "matches": ["https://*.linkedin.com/*"]
       }
