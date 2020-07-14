@@ -19,7 +19,7 @@ body{
 }
 
 /*used in connections, and a bit in jobs*/
-.artdeco-card{
+.artdeco-card, .artdeco-carousel, .artdeco-modal{
 	background-color: #444 !important;
 }
 
@@ -90,20 +90,20 @@ body{
 
 /*MY NETWORK*/
 
-/*left box in network page*/
-.mn-community-summary{
+/*left box in network page, your network rows*/
+.mn-community-summary, .mn-connection-card{
 	background-color: #444;
 }
 
 /*NOTIFICATIONS*/
 
-/*left box, headers of noticiations, notification card on notifications page*/
-.nt-notifications-heading, .nt-segment, .nt-card{
+/*left box, headers of noticiations, notification card on notifications page, card in card*/
+.nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content{
 	background-color: #444 !important;
 }
 
-/*text*/
-.nt-card__headline{
+/*text in notifications, text for card in card*/
+.nt-card__headline, .nt-card-content__main-text{
 	color: #ccc !important;
 }
 
@@ -115,3 +115,14 @@ body{
 	background-color: #444 !important;
 }
 
+/*message text*/
+.msg-spinmail-thread__message-body{
+	color: #ccc !important;
+}
+
+/*PROFILE*/
+
+/*sections in page, header when scrolled down*/
+.pv-profile-section, .pv-profile-sticky-header{
+	background-color: #444 !important;
+}
