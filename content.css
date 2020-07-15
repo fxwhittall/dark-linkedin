@@ -3,13 +3,25 @@ body{
 	background-color: #333 !important;
 }
 
+h1, h2, h3, h4{
+	color: #ccc !important;
+}
+
+time{
+	color: #ccc !important;
+}
+
 /*text somewhere, i do not recall - Fay get better at documentation*/
 .mb2{
 	color: #ccc;
 }
 
-/*most text in buttons*/
-.artdeco-button__text{
+.mr2{
+	color: #ccc;
+}
+
+/*most text in buttons, icons, send icon*/
+.artdeco-button__text, .artdeco-button__icon, .send-privately-icon{
 	color: #ccc;
 }
 
@@ -61,14 +73,15 @@ body{
 	background-color: #aaa !important;
 }
 
-/*boxes in feed, boxes in boxes, comments background, buttons, social buttons, make a post box*/
-.feed-shared-update-v2, .feed-shared-mini-update-v2, .comments-comments-list, .artdeco-button, .feed-shared-social-actions, .share-box-feed-entry__wrapper{
+/*boxes in feed, boxes in boxes, comments background, buttons, social buttons, make a post box, text boxes in boxes*/
+.feed-shared-update-v2, .feed-shared-mini-update-v2, .comments-comments-list, .artdeco-button, .feed-shared-social-actions, .share-box-feed-entry__wrapper, .feed-shared-update-v2__description-wrapper{
 	background-color: #444 !important;
 }
 
 /*card with face, information beneath it*/
 .feed-identity-module, .entity-item{
 	background-color: #444 !important;
+	color: #ccc !important;
 }
 
 /*left side follow stuff, headers in things followed, ad area*/
@@ -81,6 +94,7 @@ body{
 	background-color: #444 !important;
 }
 
+
 /*JOBS*/
 
 /*job search box, jobs rectangle, squares with individual jobs*/
@@ -88,11 +102,21 @@ body{
 	background-color: #444 !important;
 }
 
+.job-card-square__title{
+	color: #ccc !important;
+}
+
+
 /*MY NETWORK*/
 
 /*left box in network page, your network rows*/
 .mn-community-summary, .mn-connection-card{
 	background-color: #444;
+}
+
+/*occupations, connections/followers, names, left sidebar, left sidebar numbers*/
+.discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, .mn-community-summary__entity-info, .pl3{
+	color: #ccc !important;
 }
 
 /*NOTIFICATIONS*/
@@ -120,9 +144,10 @@ body{
 	color: #ccc !important;
 }
 
+
 /*PROFILE*/
 
-/*sections in page, header when scrolled down*/
-.pv-profile-section, .pv-profile-sticky-header{
+/*sections in page, header when scrolled down, boxes in profile*/
+.pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card{
 	background-color: #444 !important;
 }
