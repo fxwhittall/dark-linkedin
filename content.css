@@ -11,6 +11,10 @@ time{
 	color: #ccc !important;
 }
 
+.link{
+	color: #eee !important;
+}
+
 /*text somewhere, i do not recall - Fay get better at documentation*/
 .mb2{
 	color: #ccc;
@@ -89,6 +93,10 @@ time{
 	background-color: #444 !important;
 }
 
+.feed-shared-list-package__entity-item.hover{
+	background-color: #aaa !important;
+}
+
 /*news area*/
 .feed-shared-news-module{
 	background-color: #444 !important;
@@ -118,6 +126,12 @@ time{
 .discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, .mn-community-summary__entity-info, .pl3{
 	color: #ccc !important;
 }
+
+/*new invites, accepted invites*/
+.invitation-card, .invitation-card__picture, .mn-accept-invite-notification{
+	background-color: #aaa !important;
+}
+
 
 /*NOTIFICATIONS*/
 
