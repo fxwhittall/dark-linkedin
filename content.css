@@ -3,10 +3,6 @@ body{
 	background-color: #333 !important;
 }
 
-h1, h2, h3, h4{
-	color: #ccc !important;
-}
-
 time{
 	color: #ccc !important;
 }
@@ -44,11 +40,23 @@ time{
 	background-color: #aaa !important;
 }
 
-/*message tab*/
-.msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search{
+
+/*MESSAGE BOX OVERLAY*/
+
+/*message tab, message open*/
+.msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search, .msg-form__footer, .msg-s-message-list-container{
 	background-color: #444 !important;
 }
 
+/*text (names, conversation snippets), conversation*/
+.msg-conversation-listitem__participant-names, .msg-overlay-list-bubble__message-snippet, .msg-s-event-listitem__body{
+	color: #ccc !important
+}
+
+/*sponsored/flairs*/
+.msg-conversation-card__pill{
+	color: #eee !important;
+}
 
 /*FEED*/
 
@@ -127,8 +135,9 @@ time{
 	background-color: #444;
 }
 
-/*occupations, connections/followers, names, left sidebar, left sidebar numbers*/
-.discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, .mn-community-summary__entity-info, .pl3{
+/*occupations, connections/followers, names, left sidebar, left sidebar numbers, titles*/
+.discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, 
+.actor-name, .mn-community-summary__entity-info, .pl3, .mh4{
 	color: #ccc !important;
 }
 
@@ -141,37 +150,42 @@ time{
 /*NOTIFICATIONS*/
 
 /*left box, headers of noticiations, notification card on notifications page, card in card*/
-.nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content{
+.nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content, .nt-card-content__body{
 	background-color: #444 !important;
 }
 
-/*text in notifications, text for card in card*/
-.nt-card__headline, .nt-card-content__main-text{
+/*text in notifications, text for card in card, social actions in notifications*/
+.nt-card__headline, .nt-card-content__main-text, .nt-social-counts__count{
 	color: #ccc !important;
 }
 
 
 /*MESSAGING*/
 
-/*message sidebar, main convo, typing area*/
-.msg-conversations-container, .msg-thread, .msg-form, .shared-title-bar{
+/*message sidebar, main convo, typing area, top of messaging area*/
+.msg-conversations-container, .msg-thread, .msg-form, .shared-title-bar, .msg-title-bar__title-bar-title{
 	background-color: #444 !important;
 }
 
-/*message text*/
-.msg-spinmail-thread__message-body{
+/*message text, conversation snippets*/
+.msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body{
 	color: #ccc !important;
 }
 
 
 /*PROFILE*/
 
-/*sections in page, header when scrolled down, boxes in profile, expanded skills, education*/
-.pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card, .pv-skill-categories-section__expanded, .pv-education-entity{
+/*sections in page, header when scrolled down, boxes in profile, expanded skills, education, certifications*/
+.pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card, .pv-skill-categories-section__expanded, 
+.pv-education-entity, .pv-certification-entity, .entity-list-item{
 	background-color: #444 !important;
 }
 
-/*followers in interests, skills, job descriptions, about text, subtitles to jobs, header text*/
-.pv-entity__follower-count, .pv-skill-category-entity__name-text, .pv-entity__description, .pv-about__summary-text, .pv-entity__secondary-title, .artdeco-entity-lockup__title, .artdeco-entity-lockup__subtitle{
+/*followers in interests, skills, job descriptions, about text, subtitles to jobs, header text, headings to sections, interests tab*/
+.pv-entity__follower-count, .pv-skill-category-entity__name-text, 
+.pv-entity__description, .pv-about__summary-text, .pv-entity__secondary-title, 
+.artdeco-entity-lockup__title, .artdeco-entity-lockup__subtitle,
+.pv-profile-section__card-heading, .card-heading, .pv-entity__summary-title,
+.pv-profile-detail__nav-link, .pv-profile-detail__title{
 	color: #ccc !important;
 }
