@@ -44,6 +44,11 @@ time{
 	background-color: #aaa !important;
 }
 
+/*message tab*/
+.msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search{
+	background-color: #444 !important;
+}
+
 
 /*FEED*/
 
@@ -110,7 +115,7 @@ time{
 	background-color: #444 !important;
 }
 
-.job-card-square__title{
+.job-card-square__title, .job-flavors__label{
 	color: #ccc !important;
 }
 
@@ -149,7 +154,7 @@ time{
 /*MESSAGING*/
 
 /*message sidebar, main convo, typing area*/
-.msg-conversations-container, .msg-thread, .msg-form{
+.msg-conversations-container, .msg-thread, .msg-form, .shared-title-bar{
 	background-color: #444 !important;
 }
 
@@ -161,7 +166,12 @@ time{
 
 /*PROFILE*/
 
-/*sections in page, header when scrolled down, boxes in profile*/
-.pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card{
+/*sections in page, header when scrolled down, boxes in profile, expanded skills, education*/
+.pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card, .pv-skill-categories-section__expanded, .pv-education-entity{
 	background-color: #444 !important;
+}
+
+/*followers in interests, skills, job descriptions, about text, subtitles to jobs, header text*/
+.pv-entity__follower-count, .pv-skill-category-entity__name-text, .pv-entity__description, .pv-about__summary-text, .pv-entity__secondary-title, .artdeco-entity-lockup__title, .artdeco-entity-lockup__subtitle{
+	color: #ccc !important;
 }
