@@ -30,17 +30,17 @@ a{
 
 /*most text in buttons, icons, send icon*/
 .artdeco-button__text, .artdeco-button__icon, .send-privately-icon{
-	color: #ccc !important;
+	color: var(--primary-text-color) !important;
 }
 
 /*see more buttons throughout*/
 .see-more{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 /*used in connections, and a bit in jobs*/
 .artdeco-card, .artdeco-carousel, .artdeco-modal{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 /*hovercard*/
@@ -66,12 +66,12 @@ a{
 
 /*text (names, conversation snippets), conversation*/
 .msg-conversation-listitem__participant-names, .msg-overlay-list-bubble__message-snippet, .msg-s-event-listitem__body{
-	color: #ccc !important
+	color: var(--primary-text-color) !important
 }
 
 /*sponsored/flairs*/
 .msg-conversation-card__pill{
-	color: #eee !important;
+	color: var(--link-color) !important;
 }
 
 
@@ -106,12 +106,12 @@ a{
 
 /*comment box*/
 .comments-comment-box{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 /*comment box*/
 .comments-comment-texteditor{
-	background-color: #aaa !important;
+	background-color: var(--secondary-body-color) !important;
 }
 
 /*be the first to comment block*/
@@ -128,8 +128,8 @@ a{
 
 /*card with face, information beneath it*/
 .feed-identity-module, .entity-item{
-	background-color: #444 !important;
-	color: #ccc !important;
+	background-color: var(--body-color) !important;
+	color: var(--primary-text-color) !important;
 }
 
 /*left side follow stuff, headers in things followed, ad area*/
@@ -155,7 +155,7 @@ a{
 }
 
 .job-card-square__title, .job-flavors__label, .job-card-container__company-name{
-	color: #ccc !important;
+	color: var(--primary-text-color) !important;
 }
 
 
@@ -169,12 +169,12 @@ a{
 /*occupations, connections/followers, names, left sidebar, left sidebar numbers, titles*/
 .discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, 
 .actor-name, .mn-community-summary__entity-info, .pl3{
-	color: #ccc !important;
+	color: var(--primary-text-color) !important;
 }
 
 /*new invites, accepted invites*/
 .invitation-card, .invitation-card__picture, .mn-accept-invite-notification{
-	background-color: #aaa !important;
+	background-color: var(--secondary-body-color) !important;
 }
 
 
@@ -195,12 +195,12 @@ a{
 
 /*message sidebar, main convo, typing area, top of messaging area*/
 .msg-conversations-container, .msg-thread, .msg-form, .shared-title-bar, .msg-title-bar__title-bar-title{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 /*message text, conversation snippets, job title, main messages heading*/
 .msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body, .msg-entity-lockup__entity-info, .ph4{
-	color: #ccc !important;
+	color: var(--primary-text-color) !important;
 }
 
 
@@ -209,7 +209,7 @@ a{
 /*sections in page, header when scrolled down, boxes in profile, expanded skills, education, certifications*/
 .pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card, .pv-skill-categories-section__expanded, 
 .pv-education-entity, .pv-certification-entity, .entity-list-item{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 /*followers in interests, skills, job descriptions, about text, subtitles to jobs, header text, headings to sections, interests tab, highlights text*/
@@ -220,5 +220,5 @@ a{
 .pv-profile-detail__nav-link, .pv-profile-detail__title,
 .pv-highlight-entity__primary-text, .pv-highlight-entity__secondary-text,
 .pv-entity__date-range, .pv-entity__bullet-item, .pv-skill-categories-section__secondary-skill-heading{
-	color: #ccc !important;
+	color: var(--primary-text-color) !important;
 }
