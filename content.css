@@ -7,22 +7,26 @@ time{
 	color: #ccc !important;
 }
 
+li-icon{
+	color: #ccc !important;
+}
+
 .link{
 	color: #eee !important;
 }
 
 /*text somewhere, i do not recall - Fay get better at documentation*/
 .mb2{
-	color: #ccc;
+	color: #ccc !important;
 }
 
 .mr2{
-	color: #ccc;
+	color: #ccc !important;
 }
 
 /*most text in buttons, icons, send icon*/
 .artdeco-button__text, .artdeco-button__icon, .send-privately-icon{
-	color: #ccc;
+	color: #ccc !important;
 }
 
 /*see more buttons throughout*/
@@ -38,6 +42,10 @@ time{
 /*hovercard*/
 .entity-hovercard{
 	background-color: #aaa !important;
+}
+
+.global-footer__link{
+	color: #eee !important;
 }
 
 
@@ -58,21 +66,20 @@ time{
 	color: #eee !important;
 }
 
+
 /*FEED*/
 
-/*most text in feed, names of people*/
-.break-words, .feed-shared-announcement__title{
+/*most text in feed, names of people, write article, news sidebar, interests sidebar, your name and position*/
+.break-words, .feed-shared-announcement__title, .share-box-feed-entry__bottom-bar-item-text, 
+.feed-shared-news-module__headline, .feed-shared-news-module__subtext,
+.feed-shared-interest-package__entity-link, .feed-shared-interest-package__header, .feed-shared-interest-package__cta
+.profile-rail-card__actor-link{
 	color: #ccc !important;
 }
 
 /*links*/
 .hoverable-link-text, .tap-target{
 	color: #eee !important;
-}
-
-/*text in feed*/
-.feed-shared-text{
-	color: #444 !important;
 }
 
 /*comment box*/
@@ -91,7 +98,8 @@ time{
 }
 
 /*boxes in feed, boxes in boxes, comments background, buttons, social buttons, make a post box, text boxes in boxes*/
-.feed-shared-update-v2, .feed-shared-mini-update-v2, .comments-comments-list, .artdeco-button, .feed-shared-social-actions, .share-box-feed-entry__wrapper, .feed-shared-update-v2__description-wrapper{
+.feed-shared-update-v2, .feed-shared-mini-update-v2, .comments-comments-list, .artdeco-button, 
+.feed-shared-social-actions, .share-box-feed-entry__wrapper, .feed-shared-update-v2__description-wrapper{
 	background-color: #444 !important;
 }
 
@@ -123,7 +131,7 @@ time{
 	background-color: #444 !important;
 }
 
-.job-card-square__title, .job-flavors__label{
+.job-card-square__title, .job-flavors__label, .job-card-container__company-name{
 	color: #ccc !important;
 }
 
@@ -154,8 +162,8 @@ time{
 	background-color: #444 !important;
 }
 
-/*text in notifications, text for card in card, social actions in notifications*/
-.nt-card__headline, .nt-card-content__main-text, .nt-social-counts__count{
+/*text in notifications, text for card in card, social actions in notifications, references to other posts, timestamps*/
+.nt-card__headline, .nt-card-content__main-text, .nt-social-counts__count, .nt-card-content__ref-text, .nt-card__time-ago{
 	color: #ccc !important;
 }
 
@@ -167,8 +175,8 @@ time{
 	background-color: #444 !important;
 }
 
-/*message text, conversation snippets*/
-.msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body{
+/*message text, conversation snippets, job title, main messages heading*/
+.msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body, .msg-entity-lockup__entity-info, .ph4{
 	color: #ccc !important;
 }
 
@@ -181,11 +189,13 @@ time{
 	background-color: #444 !important;
 }
 
-/*followers in interests, skills, job descriptions, about text, subtitles to jobs, header text, headings to sections, interests tab*/
+/*followers in interests, skills, job descriptions, about text, subtitles to jobs, header text, headings to sections, interests tab, highlights text*/
 .pv-entity__follower-count, .pv-skill-category-entity__name-text, 
 .pv-entity__description, .pv-about__summary-text, .pv-entity__secondary-title, 
 .artdeco-entity-lockup__title, .artdeco-entity-lockup__subtitle,
 .pv-profile-section__card-heading, .card-heading, .pv-entity__summary-title,
-.pv-profile-detail__nav-link, .pv-profile-detail__title{
+.pv-profile-detail__nav-link, .pv-profile-detail__title,
+.pv-highlight-entity__primary-text, .pv-highlight-entity__secondary-text,
+.pv-entity__date-range, .pv-entity__bullet-item, .pv-skill-categories-section__secondary-skill-heading{
 	color: #ccc !important;
 }
