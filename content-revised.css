@@ -1,0 +1,22 @@
+/*GENERAL*/
+:root{
+	--backdrop-color: #333;
+	--body-color: #444;
+	--primary-text-color: #ccc;
+}
+
+body{
+	background-color: var(--backdrop-color) !important;
+}
+
+time{
+	color: var(--primary-text-color) !important;
+}
+
+li-icon{
+	color: var(--primary-text-color) !important;
+}
+
+p{
+	color: var(--primary-text-color) !important;
+}

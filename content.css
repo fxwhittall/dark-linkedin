@@ -1,27 +1,31 @@
 /*GENERAL*/
+:root{
+	--backdrop-color: #333;
+	--body-color: #444;
+	--primary-text-color: #ccc;
+	--link-color: #eee;
+	--secondary-body-color: #aaa;
+	--secondary-text-color: #333;
+}
+
 body{
-	background-color: #333 !important;
+	background-color: var(--backdrop-color) !important;
 }
 
 time{
-	color: #ccc !important;
+	color: var(--primary-text-color) !important;
 }
 
 li-icon{
-	color: #ccc !important;
+	color: var(--primary-text-color) !important;
 }
 
-.link{
-	color: #eee !important;
+h1, h2, h3, h4, p{
+	color: var(--primary-text-color) !important;
 }
 
-/*text somewhere, i do not recall - Fay get better at documentation*/
-.mb2{
-	color: #ccc !important;
-}
-
-.mr2{
-	color: #ccc !important;
+a{
+	color: var(--link-color) !important;
 }
 
 /*most text in buttons, icons, send icon*/
@@ -41,11 +45,15 @@ li-icon{
 
 /*hovercard*/
 .entity-hovercard{
-	background-color: #aaa !important;
+	background-color: var(--secondary-body-color) !important;
+}
+
+.entity-hovercard__subtitle{
+	color: var(--secondary-text-color) !important;
 }
 
 .global-footer__link{
-	color: #eee !important;
+	color: var(--link-color) !important;
 }
 
 
@@ -53,7 +61,7 @@ li-icon{
 
 /*message tab, message open*/
 .msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search, .msg-form__footer, .msg-s-message-list-container{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 /*text (names, conversation snippets), conversation*/
@@ -69,17 +77,31 @@ li-icon{
 
 /*FEED*/
 
-/*most text in feed, names of people, write article, news sidebar, interests sidebar, your name and position*/
+/*shared article text*/
+.feed-shared-article__title, .feed-shared-article__subtitle{
+	color: var(--secondary-text-color) !important;
+}
+
+/*shared article bar*/
+.feed-shared-article__description-container, .feed-shared-article--with-small-image{
+	background-color: var(--secondary-body-color) !important;
+}
+
+/*most text in feed, names of people, write article, news sidebar, interests sidebar, your position*/
 .break-words, .feed-shared-announcement__title, .share-box-feed-entry__bottom-bar-item-text, 
 .feed-shared-news-module__headline, .feed-shared-news-module__subtext,
-.feed-shared-interest-package__entity-link, .feed-shared-interest-package__header, .feed-shared-interest-package__cta
+.feed-shared-interest-package__entity-link, .feed-shared-interest-package__header, .feed-shared-interest-package__cta{
+	color: var(--primary-text-color) !important;
+}
+
+/*your name*/
 .profile-rail-card__actor-link{
-	color: #ccc !important;
+	color: var(--link-color) !important;
 }
 
 /*links*/
 .hoverable-link-text, .tap-target{
-	color: #eee !important;
+	color: var(--link-color) !important;
 }
 
 /*comment box*/
@@ -94,13 +116,14 @@ li-icon{
 
 /*be the first to comment block*/
 .feed-shared-first-prompt-block{
-	background-color: #aaa !important;
+	background-color: var(--secondary-body-color) !important;
+	color: var(--secondary-text-color) !important;
 }
 
 /*boxes in feed, boxes in boxes, comments background, buttons, social buttons, make a post box, text boxes in boxes*/
 .feed-shared-update-v2, .feed-shared-mini-update-v2, .comments-comments-list, .artdeco-button, 
 .feed-shared-social-actions, .share-box-feed-entry__wrapper, .feed-shared-update-v2__description-wrapper{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 /*card with face, information beneath it*/
@@ -111,16 +134,12 @@ li-icon{
 
 /*left side follow stuff, headers in things followed, ad area*/
 .left-rail-container, .feed-shared-interest-package__section-header, .right-rail-container{
-	background-color: #444 !important;
-}
-
-.feed-shared-list-package__entity-item.hover{
-	background-color: #aaa !important;
+	background-color: var(--body-color) !important;
 }
 
 /*news area*/
 .feed-shared-news-module{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 
@@ -128,7 +147,11 @@ li-icon{
 
 /*job search box, jobs rectangle, squares with individual jobs*/
 .jobs-box, .jobs-blended-container, .job-card{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
+}
+
+.jobs-home-soho__search-box-container{
+	background-color: var(--secondary-body-color) !important;
 }
 
 .job-card-square__title, .job-flavors__label, .job-card-container__company-name{
@@ -138,14 +161,14 @@ li-icon{
 
 /*MY NETWORK*/
 
-/*left box in network page, your network rows*/
-.mn-community-summary, .mn-connection-card{
-	background-color: #444;
+/*left box in network page, your network rows, add personal contacts form*/
+.mn-community-summary, .mn-connection-card, .mn-abi-form__container{
+	background-color: var(--body-color) !important;
 }
 
 /*occupations, connections/followers, names, left sidebar, left sidebar numbers, titles*/
 .discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, 
-.actor-name, .mn-community-summary__entity-info, .pl3, .mh4{
+.actor-name, .mn-community-summary__entity-info, .pl3{
 	color: #ccc !important;
 }
 
@@ -157,14 +180,14 @@ li-icon{
 
 /*NOTIFICATIONS*/
 
-/*left box, headers of noticiations, notification card on notifications page, card in card*/
-.nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content, .nt-card-content__body{
-	background-color: #444 !important;
+/*left box, headers of noticiations, notification card on notifications page, card in card, improve notifications*/
+.nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content, .nt-card-content__body, .nt-settings-summary{
+	background-color: var(--body-color) !important;
 }
 
-/*text in notifications, text for card in card, social actions in notifications, references to other posts, timestamps*/
-.nt-card__headline, .nt-card-content__main-text, .nt-social-counts__count, .nt-card-content__ref-text, .nt-card__time-ago{
-	color: #ccc !important;
+/*text in notifications, text for card in card, social actions in notifications, references to other posts*/
+.nt-card__headline, .nt-card-content__main-text, .nt-social-counts__count, .nt-card-content__ref-text{
+	color: var(--primary-text-color) !important;
 }
 
 
