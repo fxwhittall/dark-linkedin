@@ -20,7 +20,7 @@ li-icon{
 	color: var(--primary-text-color) !important;
 }
 
-h1, h2, h3, h4, p{
+h1, h2, h3, h4, h5, p{
 	color: var(--primary-text-color) !important;
 }
 
@@ -28,8 +28,12 @@ a{
 	color: var(--link-color) !important;
 }
 
-/*most text in buttons, icons, send icon*/
-.artdeco-button__text, .artdeco-button__icon, .send-privately-icon{
+button{
+	color: var(--primary-text-color) !important;
+}
+
+/*icons, send icon*/
+.artdeco-button__icon, .send-privately-icon{
 	color: var(--primary-text-color) !important;
 }
 
@@ -56,6 +60,20 @@ a{
 	color: var(--link-color) !important;
 }
 
+.nav-app-launcher__card{
+	background-color: var(--body-color) !important;
+}
+
+/*dropdown*/
+
+.artdeco-dropdown__content, .nav-dropdown__item, .nav-settings__topcard, .container-with-shadow, .nav-settings__member, .nav-settings__linkcard{
+	background-color: var(--body-color) !important;
+}
+
+.nav-dropdown__title{
+	background-color: var(--secondary-body-color) !important;
+}
+
 
 /*MESSAGE BOX OVERLAY*/
 
@@ -78,19 +96,21 @@ a{
 /*FEED*/
 
 /*shared article text*/
-.feed-shared-article__title, .feed-shared-article__subtitle{
+.feed-shared-article__title, .feed-shared-article__subtitle, .feed-shared-article__description{
 	color: var(--secondary-text-color) !important;
 }
 
-/*shared article bar*/
-.feed-shared-article__description-container, .feed-shared-article--with-small-image{
+/*shared articles*/
+.feed-shared-article__description-container, .feed-shared-article--with-small-image, 
+.feed-shared-article--with-large-image, .feed-shared-article--with-no-image{
 	background-color: var(--secondary-body-color) !important;
+	background: transparent;
 }
 
 /*most text in feed, names of people, write article, news sidebar, interests sidebar, your position*/
 .break-words, .feed-shared-announcement__title, .share-box-feed-entry__bottom-bar-item-text, 
 .feed-shared-news-module__headline, .feed-shared-news-module__subtext,
-.feed-shared-interest-package__entity-link, .feed-shared-interest-package__header, .feed-shared-interest-package__cta{
+.feed-shared-interest-package__entity-link, .feed-shared-interest-package__cta{
 	color: var(--primary-text-color) !important;
 }
 
@@ -154,7 +174,7 @@ a{
 	background-color: var(--secondary-body-color) !important;
 }
 
-.job-card-square__title, .job-flavors__label, .job-card-container__company-name{
+.job-card-square__title, .job-flavors__label, .job-card-container__company-name, .job-card-container__apply-method, .job-card-square__badge{
 	color: var(--primary-text-color) !important;
 }
 
