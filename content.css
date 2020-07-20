@@ -6,6 +6,7 @@
 	--link-color: #eee;
 	--secondary-body-color: #aaa;
 	--secondary-text-color: #333;
+	--tertiary-text-color: #66c9ff;
 }
 
 body{
@@ -71,7 +72,7 @@ button{
 }
 
 .nav-dropdown__title{
-	background-color: var(--secondary-body-color) !important;
+	color: var(--secondary-text-color) !important;
 }
 
 
@@ -115,8 +116,12 @@ button{
 }
 
 /*your name*/
-.profile-rail-card__actor-link{
+.profile-rail-card__actor-link, .identity-widget-item__headline{
 	color: var(--link-color) !important;
+}
+
+.feed-identity-module__stat{
+	color: var(--tertiary-text-color) !important;
 }
 
 /*links*/
@@ -195,6 +200,10 @@ button{
 /*new invites, accepted invites*/
 .invitation-card, .invitation-card__picture, .mn-accept-invite-notification{
 	background-color: var(--secondary-body-color) !important;
+}
+
+.member-insights__count{
+	color: var(--secondary-text-color) !important;
 }
 
 
