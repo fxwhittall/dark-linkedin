@@ -1,80 +1,253 @@
+/*GENERAL*/
+:root{
+	--backdrop-color: #333;
+	--body-color: #444;
+	--primary-text-color: #ccc;
+	--link-color: #eee;
+	--secondary-body-color: #aaa;
+	--secondary-text-color: #333;
+	--tertiary-text-color: #66c9ff;
+}
+
 body{
-	background-color: #353535 !important;
+	background-color: var(--backdrop-color) !important;
 }
 
-/*most text in feed*/
-.break-words{
-	color: #ccc;
+time{
+	color: var(--primary-text-color) !important;
 }
 
-/*text*/
-.mb2{
-	color: #ccc;
+li-icon{
+	color: var(--primary-text-color) !important;
 }
 
-/*most text in buttons*/
-.artdeco-button__text{
-	color: #ccc;
+h1, h2, h3, h4, h5, p{
+	color: var(--primary-text-color) !important;
+}
+
+a{
+	color: var(--link-color) !important;
+}
+
+button{
+	color: var(--primary-text-color) !important;
+}
+
+/*icons, send icon*/
+.artdeco-button__icon, .send-privately-icon{
+	color: var(--primary-text-color) !important;
 }
 
 /*see more buttons throughout*/
 .see-more{
-	background-color: #444 !important;
-}
-
-/*be the first to comment block*/
-.feed-shared-first-prompt-block{
-	background-color: #aaa !important;
-}
-
-/*job search box, jobs rectangle, squares with individual jobs*/
-.jobs-box, .jobs-blended-container, .job-card{
-	background-color: #444 !important;
-}
-
-/*boxes in feed, boxes in boxes, comments background, buttons, social buttons, make a post box*/
-.feed-shared-update-v2, .feed-shared-mini-update-v2, .comments-comments-list, .artdeco-button, .feed-shared-social-actions, .share-box-feed-entry__wrapper{
-	background-color: #444 !important;
-}
-
-
-
-/*card with face, information beneath it*/
-.feed-identity-module, .entity-item{
-	background-color: #444 !important;
-}
-
-/*left side follow stuff, headers in things followed, ad area*/
-.left-rail-container, .feed-shared-interest-package__section-header, .right-rail-container{
-	background-color: #444 !important;
-}
-
-/*news area*/
-.feed-shared-news-module{
-	background-color: #444 !important;
+	background-color: var(--body-color) !important;
 }
 
 /*used in connections, and a bit in jobs*/
-.artdeco-card{
-	background-color: #444 !important;
-}
-
-/*left box in network page*/
-.mn-community-summary{
-	background-color: #444;
-}
-
-/*left box, headers of noticiations, notification card on notifications page*/
-.nt-notifications-heading, .nt-segment, .nt-card{
-	background-color: #444 !important;
-}
-
-/*message sidebar, main convo, typing area*/
-.msg-conversations-container, .msg-thread, .msg-form{
-	background-color: #444 !important;
+.artdeco-card, .artdeco-carousel, .artdeco-modal{
+	background-color: var(--body-color) !important;
 }
 
 /*hovercard*/
 .entity-hovercard{
-	background-color: #aaa !important;
+	background-color: var(--secondary-body-color) !important;
+}
+
+.entity-hovercard__subtitle{
+	color: var(--secondary-text-color) !important;
+}
+
+.global-footer__link{
+	color: var(--link-color) !important;
+}
+
+.nav-app-launcher__card{
+	background-color: var(--body-color) !important;
+}
+
+/*dropdown*/
+
+.artdeco-dropdown__content, .nav-dropdown__item, .nav-settings__topcard, .container-with-shadow, .nav-settings__member, .nav-settings__linkcard{
+	background-color: var(--body-color) !important;
+}
+
+.nav-dropdown__title{
+	color: var(--secondary-text-color) !important;
+}
+
+
+/*MESSAGE BOX OVERLAY*/
+
+/*message tab, message open*/
+.msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search, .msg-form__footer, .msg-s-message-list-container{
+	background-color: var(--body-color) !important;
+}
+
+/*text (names, conversation snippets), conversation*/
+.msg-conversation-listitem__participant-names, .msg-overlay-list-bubble__message-snippet, .msg-s-event-listitem__body{
+	color: var(--primary-text-color) !important
+}
+
+/*sponsored/flairs*/
+.msg-conversation-card__pill{
+	color: var(--link-color) !important;
+}
+
+
+/*FEED*/
+
+/*shared article text*/
+.feed-shared-article__title, .feed-shared-article__subtitle, .feed-shared-article__description{
+	color: var(--secondary-text-color) !important;
+}
+
+/*shared articles*/
+.feed-shared-article__description-container, .feed-shared-article--with-small-image, 
+.feed-shared-article--with-large-image, .feed-shared-article--with-no-image{
+	background-color: var(--secondary-body-color) !important;
+	background: transparent;
+}
+
+/*most text in feed, names of people, write article, news sidebar, interests sidebar, your position*/
+.break-words, .feed-shared-announcement__title, .share-box-feed-entry__bottom-bar-item-text, 
+.feed-shared-news-module__headline, .feed-shared-news-module__subtext,
+.feed-shared-interest-package__entity-link, .feed-shared-interest-package__cta{
+	color: var(--primary-text-color) !important;
+}
+
+/*your name*/
+.profile-rail-card__actor-link, .identity-widget-item__headline{
+	color: var(--link-color) !important;
+}
+
+.feed-identity-module__stat{
+	color: var(--tertiary-text-color) !important;
+}
+
+/*links*/
+.hoverable-link-text, .tap-target{
+	color: var(--link-color) !important;
+}
+
+/*comment box*/
+.comments-comment-box{
+	background-color: var(--body-color) !important;
+}
+
+/*comment box*/
+.comments-comment-texteditor{
+	background-color: var(--secondary-body-color) !important;
+}
+
+/*be the first to comment block*/
+.feed-shared-first-prompt-block{
+	background-color: var(--secondary-body-color) !important;
+	color: var(--secondary-text-color) !important;
+}
+
+/*boxes in feed, boxes in boxes, comments background, buttons, social buttons, make a post box, text boxes in boxes*/
+.feed-shared-update-v2, .feed-shared-mini-update-v2, .comments-comments-list, .artdeco-button, 
+.feed-shared-social-actions, .share-box-feed-entry__wrapper, .feed-shared-update-v2__description-wrapper{
+	background-color: var(--body-color) !important;
+}
+
+/*card with face, information beneath it*/
+.feed-identity-module, .entity-item{
+	background-color: var(--body-color) !important;
+	color: var(--primary-text-color) !important;
+}
+
+/*left side follow stuff, headers in things followed, ad area*/
+.left-rail-container, .feed-shared-interest-package__section-header, .right-rail-container{
+	background-color: var(--body-color) !important;
+}
+
+/*news area*/
+.feed-shared-news-module{
+	background-color: var(--body-color) !important;
+}
+
+
+/*JOBS*/
+
+/*job search box, jobs rectangle, squares with individual jobs*/
+.jobs-box, .jobs-blended-container, .job-card{
+	background-color: var(--body-color) !important;
+}
+
+.jobs-home-soho__search-box-container{
+	background-color: var(--secondary-body-color) !important;
+}
+
+.job-card-square__title, .job-flavors__label, .job-card-container__company-name, .job-card-container__apply-method, .job-card-square__badge{
+	color: var(--primary-text-color) !important;
+}
+
+
+/*MY NETWORK*/
+
+/*left box in network page, your network rows, add personal contacts form*/
+.mn-community-summary, .mn-connection-card, .mn-abi-form__container{
+	background-color: var(--body-color) !important;
+}
+
+/*occupations, connections/followers, names, left sidebar, left sidebar numbers, titles*/
+.discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, 
+.actor-name, .mn-community-summary__entity-info, .pl3{
+	color: var(--primary-text-color) !important;
+}
+
+/*new invites, accepted invites*/
+.invitation-card, .invitation-card__picture, .mn-accept-invite-notification{
+	background-color: var(--secondary-body-color) !important;
+}
+
+.member-insights__count{
+	color: var(--secondary-text-color) !important;
+}
+
+
+/*NOTIFICATIONS*/
+
+/*left box, headers of noticiations, notification card on notifications page, card in card, improve notifications*/
+.nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content, .nt-card-content__body, .nt-settings-summary{
+	background-color: var(--body-color) !important;
+}
+
+/*text in notifications, text for card in card, social actions in notifications, references to other posts*/
+.nt-card__headline, .nt-card-content__main-text, .nt-social-counts__count, .nt-card-content__ref-text{
+	color: var(--primary-text-color) !important;
+}
+
+
+/*MESSAGING*/
+
+/*message sidebar, main convo, typing area, top of messaging area*/
+.msg-conversations-container, .msg-thread, .msg-form, .shared-title-bar, .msg-title-bar__title-bar-title{
+	background-color: var(--body-color) !important;
+}
+
+/*message text, conversation snippets, job title, main messages heading*/
+.msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body, .msg-entity-lockup__entity-info, .ph4{
+	color: var(--primary-text-color) !important;
+}
+
+
+/*PROFILE*/
+
+/*sections in page, header when scrolled down, boxes in profile, expanded skills, education, certifications*/
+.pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card, .pv-skill-categories-section__expanded, 
+.pv-education-entity, .pv-certification-entity, .entity-list-item{
+	background-color: var(--body-color) !important;
+}
+
+/*followers in interests, skills, job descriptions, about text, subtitles to jobs, header text, headings to sections, interests tab, highlights text*/
+.pv-entity__follower-count, .pv-skill-category-entity__name-text, 
+.pv-entity__description, .pv-about__summary-text, .pv-entity__secondary-title, 
+.artdeco-entity-lockup__title, .artdeco-entity-lockup__subtitle,
+.pv-profile-section__card-heading, .card-heading, .pv-entity__summary-title,
+.pv-profile-detail__nav-link, .pv-profile-detail__title,
+.pv-highlight-entity__primary-text, .pv-highlight-entity__secondary-text,
+.pv-entity__date-range, .pv-entity__bullet-item, .pv-skill-categories-section__secondary-skill-heading{
+	color: var(--primary-text-color) !important;
 }
