@@ -1,6 +1,6 @@
 /*GENERAL*/
 :root{
-	--backdrop-color: #333;
+	--backdrop-color: #222;
 	--body-color: #444;
 	--primary-text-color: #ccc;
 	--link-color: #eee;
@@ -33,6 +33,14 @@ button{
 	color: var(--primary-text-color) !important;
 }
 
+.t-black, .t-black--light{
+	color: var(--primary-text-color) !important;
+}
+
+.search-global-typehead__icon{
+	color: var(--secondary-text-color) !important;
+}
+
 /*icons, send icon*/
 .artdeco-button__icon, .send-privately-icon{
 	color: var(--primary-text-color) !important;
@@ -48,6 +56,19 @@ button{
 	background-color: var(--body-color) !important;
 }
 
+/*footer*/
+.global-footer__link{
+	color: var(--link-color) !important;
+}
+
+.global-footer-compact__content{
+	color: var(--primary-text-color) !important;
+}
+
+.global-footer__label{
+	color: var(--tertiary-text-color) !important;
+}
+
 /*hovercard*/
 .entity-hovercard{
 	background-color: var(--secondary-body-color) !important;
@@ -57,17 +78,15 @@ button{
 	color: var(--secondary-text-color) !important;
 }
 
-.global-footer__link{
-	color: var(--link-color) !important;
-}
 
+/*navigation side panel*/
 .nav-app-launcher__card{
 	background-color: var(--body-color) !important;
 }
 
 /*dropdown*/
-
-.artdeco-dropdown__content, .nav-dropdown__item, .nav-settings__topcard, .container-with-shadow, .nav-settings__member, .nav-settings__linkcard{
+.artdeco-dropdown__content, .nav-dropdown__item, .nav-settings__topcard, .container-with-shadow, 
+.nav-settings__member, .nav-settings__linkcard{
 	background-color: var(--body-color) !important;
 }
 
@@ -76,8 +95,7 @@ button{
 }
 
 
-/*MESSAGE BOX OVERLAY*/
-
+/*message box overlay*/
 /*message tab, message open*/
 .msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search, .msg-form__footer, .msg-s-message-list-container{
 	background-color: var(--body-color) !important;
@@ -88,10 +106,11 @@ button{
 	color: var(--primary-text-color) !important
 }
 
-/*sponsored/flairs*/
+/*sponsored & flairs*/
 .msg-conversation-card__pill{
 	color: var(--link-color) !important;
 }
+
 
 
 /*FEED*/
@@ -168,21 +187,6 @@ button{
 }
 
 
-/*JOBS*/
-
-/*job search box, jobs rectangle, squares with individual jobs*/
-.jobs-box, .jobs-blended-container, .job-card{
-	background-color: var(--body-color) !important;
-}
-
-.jobs-home-soho__search-box-container{
-	background-color: var(--secondary-body-color) !important;
-}
-
-.job-card-square__title, .job-flavors__label, .job-card-container__company-name, .job-card-container__apply-method, .job-card-square__badge{
-	color: var(--primary-text-color) !important;
-}
-
 
 /*MY NETWORK*/
 
@@ -193,7 +197,7 @@ button{
 
 /*occupations, connections/followers, names, left sidebar, left sidebar numbers, titles*/
 .discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, 
-.actor-name, .mn-community-summary__entity-info, .pl3{
+.discover-person-follow-card__name, .actor-name, .mn-community-summary__entity-info, .pl3{
 	color: var(--primary-text-color) !important;
 }
 
@@ -207,17 +211,36 @@ button{
 }
 
 
-/*NOTIFICATIONS*/
 
-/*left box, headers of noticiations, notification card on notifications page, card in card, improve notifications*/
-.nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content, .nt-card-content__body, .nt-settings-summary{
+/*JOBS*/
+
+/*job search box, jobs rectangle, squares with individual jobs*/
+.jobs-box, .jobs-blended-container, .job-card{
 	background-color: var(--body-color) !important;
 }
 
-/*text in notifications, text for card in card, social actions in notifications, references to other posts*/
-.nt-card__headline, .nt-card-content__main-text, .nt-social-counts__count, .nt-card-content__ref-text{
+/*search box*/
+.jobs-home-soho__search-box-container{
+	background-color: var(--secondary-body-color) !important;
+}
+
+/*search box title*/
+.pb4{
+	color: var(--secondary-text-color) !important;
+}
+
+/*job cards, chosen titles*/
+.job-card-square__title, .job-flavors__label, .job-card-container__company-name, .job-card-square__text--1-line,
+.job-card-container__apply-method, .job-card-square__badge,
+.jobs-home-soho-search-card__truncated-text{
 	color: var(--primary-text-color) !important;
 }
+
+/*applicant count*/
+.job-card-container__applicant-count{
+	color: var(--tertiary-text-color) !important;
+}
+
 
 
 /*MESSAGING*/
@@ -233,11 +256,26 @@ button{
 }
 
 
+
+/*NOTIFICATIONS*/
+
+/*left box, headers of noticiations, notification card on notifications page, card in card, improve notifications*/
+.nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content, .nt-card-content__body, .nt-settings-summary{
+	background-color: var(--body-color) !important;
+}
+
+/*text in notifications, text for card in card, social actions in notifications, references to other posts*/
+.nt-card__headline, .nt-card-content__main-text, .nt-social-counts__count, .nt-card-content__ref-text,
+.nt-card__text--2-line-small{
+	color: var(--primary-text-color) !important;
+}
+
+
 /*PROFILE*/
 
 /*sections in page, header when scrolled down, boxes in profile, expanded skills, education, certifications*/
 .pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card, .pv-skill-categories-section__expanded, 
-.pv-education-entity, .pv-certification-entity, .entity-list-item{
+.entity-list-item, .pv-profile-section__card-item, .pv-profile-section__list-item, .poc-opportunities-card__footer{
 	background-color: var(--body-color) !important;
 }
 
@@ -248,6 +286,30 @@ button{
 .pv-profile-section__card-heading, .card-heading, .pv-entity__summary-title,
 .pv-profile-detail__nav-link, .pv-profile-detail__title,
 .pv-highlight-entity__primary-text, .pv-highlight-entity__secondary-text,
-.pv-entity__date-range, .pv-entity__bullet-item, .pv-skill-categories-section__secondary-skill-heading{
+.pv-entity__date-range, .pv-entity__bullet-item, .pv-skill-categories-section__secondary-skill-heading, .dist-value{
 	color: var(--primary-text-color) !important;
+}
+
+
+
+/*SETTINGS*/
+
+/*nav bar*/
+#settings-nav{
+	background-color: var(--secondary-body-color) !important;
+}
+
+.nav-tab{
+	color: var(--secondary-text-color) !important;
+}
+
+/*small text beside options*/
+.indicator, .state{
+	color: var(--primary-text-color) !important;
+}
+
+/*enter password container*/
+/*CORRECT COLOR, BUT IS TRANSPARENT FOR SOME REASON*/
+.password-prompt{
+	background-color: var(--primary-body-color) !important;
 }
