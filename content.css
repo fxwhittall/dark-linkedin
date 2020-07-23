@@ -4,6 +4,7 @@
 	--body-color: #444;
 	--primary-text-color: #ccc;
 	--link-color: #eee;
+	--hover-body-color: #363636;
 	--secondary-body-color: #aaa;
 	--secondary-text-color: #333;
 	--tertiary-text-color: #66c9ff;
@@ -30,6 +31,10 @@ a{
 }
 
 button{
+	color: var(--primary-text-color) !important;
+}
+
+form{
 	color: var(--primary-text-color) !important;
 }
 
@@ -74,7 +79,7 @@ button{
 	background-color: var(--secondary-body-color) !important;
 }
 
-.entity-hovercard__subtitle{
+.entity-hovercard__subtitle, .entity-hovercard__title, .entity-hovercard__insight-text, .entity-hovercard__distance-badge{
 	color: var(--secondary-text-color) !important;
 }
 
@@ -97,18 +102,24 @@ button{
 
 /*message box overlay*/
 /*message tab, message open*/
-.msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search, .msg-form__footer, .msg-s-message-list-container{
+.msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search, .msg-form__footer, .msg-s-message-list-container
+.msg-spinmail-thread__message-body-container, .msg-spinmail-thread__message-header,
+.msg-s-message-list__event{
 	background-color: var(--body-color) !important;
 }
 
 /*text (names, conversation snippets), conversation*/
-.msg-conversation-listitem__participant-names, .msg-overlay-list-bubble__message-snippet, .msg-s-event-listitem__body{
+.msg-conversation-listitem__participant-names, .msg-overlay-list-bubble__message-snippet{
 	color: var(--primary-text-color) !important
 }
 
 /*sponsored & flairs*/
 .msg-conversation-card__pill{
 	color: var(--link-color) !important;
+}
+
+.msg-overlay-list-bubble__convo-item--hoverable:hover, .msg-s-event-listitem__message-bubble--msg-fwd-enabled:hover{
+	background-color: var(--hover-body-color) !important;
 }
 
 
@@ -186,6 +197,11 @@ button{
 	background-color: var(--body-color) !important;
 }
 
+/*left bar followed hashtags and groups, right bar news headlines*/
+.feed-shared-interest-package__entity-item:hover, .feed-shared-news-module__storyline:hover{
+	background-color: var(--hover-body-color) !important;
+}
+
 
 
 /*MY NETWORK*/
@@ -210,6 +226,9 @@ button{
 	color: var(--secondary-text-color) !important;
 }
 
+.mn-community-summary__sub-section:hover{
+	background-color: var(--hover-body-color) !important;
+}
 
 
 /*JOBS*/
@@ -251,8 +270,12 @@ button{
 }
 
 /*message text, conversation snippets, job title, main messages heading*/
-.msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body, .msg-entity-lockup__entity-info, .ph4{
+.msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body, .msg-entity-lockup__entity-info{
 	color: var(--primary-text-color) !important;
+}
+
+.msg-conversation-listitem:hover{
+	background-color: var(--hover-body-color) !important;
 }
 
 
@@ -296,16 +319,16 @@ button{
 
 /*nav bar*/
 #settings-nav{
-	background-color: var(--secondary-body-color) !important;
-}
-
-.nav-tab{
-	color: var(--secondary-text-color) !important;
+	background-color: var(--backdrop-color) !important;
 }
 
 /*small text beside options*/
 .indicator, .state{
 	color: var(--primary-text-color) !important;
+}
+
+.handle{
+	color: var(--link-color) !important;
 }
 
 /*enter password container*/
