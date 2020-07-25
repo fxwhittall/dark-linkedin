@@ -1,13 +1,15 @@
 /*GENERAL*/
 :root{
 	--backdrop-color: #222;
-	--body-color: #444;
-	--primary-text-color: #ccc;
+	--primary-body-color: #444;
+	--secondary-body-color: #555;
+	--tertiary-body-color: #005c8e;
+	--primary-text-color: #c6c6c6;
 	--link-color: #eee;
 	--hover-body-color: #363636;
-	--secondary-body-color: #aaa;
-	--secondary-text-color: #333;
+	--secondary-text-color: #ccc;
 	--tertiary-text-color: #66c9ff;
+	--disabled-text-color: #666;
 }
 
 body{
@@ -34,8 +36,16 @@ button{
 	color: var(--primary-text-color) !important;
 }
 
-form{
+form, label, input{
 	color: var(--primary-text-color) !important;
+}
+
+#app__container, .footer__base{
+	background-color: var(--backdrop-color) !important;
+}
+
+.link{
+	color: var(--tertiary-text-color) !important;
 }
 
 .t-black, .t-black--light{
@@ -53,12 +63,12 @@ form{
 
 /*see more buttons throughout*/
 .see-more{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*used in connections, and a bit in jobs*/
 .artdeco-card, .artdeco-carousel, .artdeco-modal{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*footer*/
@@ -66,13 +76,18 @@ form{
 	color: var(--link-color) !important;
 }
 
-.global-footer-compact__content{
+.global-footer-compact__content, .mobile-copyright{
 	color: var(--primary-text-color) !important;
 }
 
 .global-footer__label{
 	color: var(--tertiary-text-color) !important;
 }
+
+.global-footer__upper-row-wrapper, .global-footer__lower-row-wrapper{
+	background-color: var(--backdrop-color) !important;
+}
+
 
 /*hovercard*/
 .entity-hovercard{
@@ -86,16 +101,17 @@ form{
 
 /*navigation side panel*/
 .nav-app-launcher__card{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*dropdown*/
 .artdeco-dropdown__content, .nav-dropdown__item, .nav-settings__topcard, .container-with-shadow, 
 .nav-settings__member, .nav-settings__linkcard{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 .nav-dropdown__title{
+	background-color: var(--secondary-body-color) !important;
 	color: var(--secondary-text-color) !important;
 }
 
@@ -104,8 +120,8 @@ form{
 /*message tab, message open*/
 .msg-overlay-list-bubble__content, .msg-overlay-list-bubble-search, .msg-form__footer, .msg-s-message-list-container
 .msg-spinmail-thread__message-body-container, .msg-spinmail-thread__message-header,
-.msg-s-message-list__event{
-	background-color: var(--body-color) !important;
+.msg-s-message-list__event, .msg-spinmail-thread__message{
+	background-color: var(--primary-body-color) !important;
 }
 
 /*text (names, conversation snippets), conversation*/
@@ -127,13 +143,13 @@ form{
 /*FEED*/
 
 /*shared article text*/
-.feed-shared-article__title, .feed-shared-article__subtitle, .feed-shared-article__description{
+.feed-shared-article__title, .feed-shared-article__subtitle, .feed-shared-article__description, .feed-shared-linkedin-video__description-link{
 	color: var(--secondary-text-color) !important;
 }
 
 /*shared articles*/
 .feed-shared-article__description-container, .feed-shared-article--with-small-image, 
-.feed-shared-article--with-large-image, .feed-shared-article--with-no-image{
+.feed-shared-article--with-large-image, .feed-shared-article--with-no-image, .feed-shared-linkedin-video__sponsored-description-container{
 	background-color: var(--secondary-body-color) !important;
 	background: transparent;
 }
@@ -161,7 +177,7 @@ form{
 
 /*comment box*/
 .comments-comment-box{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*comment box*/
@@ -178,23 +194,24 @@ form{
 /*boxes in feed, boxes in boxes, comments background, buttons, social buttons, make a post box, text boxes in boxes*/
 .feed-shared-update-v2, .feed-shared-mini-update-v2, .comments-comments-list, .artdeco-button, 
 .feed-shared-social-actions, .share-box-feed-entry__wrapper, .feed-shared-update-v2__description-wrapper{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*card with face, information beneath it*/
-.feed-identity-module, .entity-item{
-	background-color: var(--body-color) !important;
+.feed-identity-module, .entity-item, .feed-identity-module__anchored-widget{
+	background-color: var(--primary-body-color) !important;
 	color: var(--primary-text-color) !important;
 }
 
 /*left side follow stuff, headers in things followed, ad area*/
-.left-rail-container, .feed-shared-interest-package__section-header, .right-rail-container{
-	background-color: var(--body-color) !important;
+.left-rail-container, .feed-shared-interest-package__section-header, .right-rail-container, .feed-shared-interest-package__entity-item,
+.feed-shared-navigation-module{
+	background-color: var(--primary-body-color) !important;
 }
 
 /*news area*/
 .feed-shared-news-module{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*left bar followed hashtags and groups, right bar news headlines*/
@@ -208,12 +225,12 @@ form{
 
 /*left box in network page, your network rows, add personal contacts form*/
 .mn-community-summary, .mn-connection-card, .mn-abi-form__container{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*occupations, connections/followers, names, left sidebar, left sidebar numbers, titles*/
 .discover-person-follow-card__occupation, .discover-person-card__occupation, .member-insights__reason, .discover-person-card__name, 
-.discover-person-follow-card__name, .actor-name, .mn-community-summary__entity-info, .pl3{
+.discover-person-follow-card__name, .actor-name, .mn-community-summary__entity-info, .pl3, .mn-accept-invite-notification__text{
 	color: var(--primary-text-color) !important;
 }
 
@@ -222,7 +239,7 @@ form{
 	background-color: var(--secondary-body-color) !important;
 }
 
-.member-insights__count{
+.member-insights__count, .invitation-inline-confirmation-card__text{
 	color: var(--secondary-text-color) !important;
 }
 
@@ -231,11 +248,12 @@ form{
 }
 
 
+
 /*JOBS*/
 
 /*job search box, jobs rectangle, squares with individual jobs*/
 .jobs-box, .jobs-blended-container, .job-card{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*search box*/
@@ -265,16 +283,17 @@ form{
 /*MESSAGING*/
 
 /*message sidebar, main convo, typing area, top of messaging area*/
-.msg-conversations-container, .msg-thread, .msg-form, .shared-title-bar, .msg-title-bar__title-bar-title{
-	background-color: var(--body-color) !important;
+.msg-conversations-container, .msg-thread, .msg-form, .shared-title-bar, .msg-title-bar__title-bar-title, .msg-spinmail-thread__top-banner{
+	background-color: var(--primary-body-color) !important;
 }
 
 /*message text, conversation snippets, job title, main messages heading*/
-.msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body, .msg-entity-lockup__entity-info{
+.msg-spinmail-thread__message-body, .msg-conversation-card__message-snippet-body, .msg-entity-lockup__entity-info, .msg-spinmail-thread__truncated-legal-content{
 	color: var(--primary-text-color) !important;
 }
 
-.msg-conversation-listitem:hover{
+/*conversation cards*/
+.msg-conversation-card__content--selectable{
 	background-color: var(--hover-body-color) !important;
 }
 
@@ -284,7 +303,7 @@ form{
 
 /*left box, headers of noticiations, notification card on notifications page, card in card, improve notifications*/
 .nt-notifications-heading, .nt-segment, .nt-card, .nt-card__content, .nt-card-content__body, .nt-settings-summary{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*text in notifications, text for card in card, social actions in notifications, references to other posts*/
@@ -293,13 +312,17 @@ form{
 	color: var(--primary-text-color) !important;
 }
 
+.nt-notif-pill-container__pill{
+	background-color: var(--tertiary-body-color) !important;
+}
+
 
 /*PROFILE*/
 
 /*sections in page, header when scrolled down, boxes in profile, expanded skills, education, certifications*/
 .pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card, .pv-skill-categories-section__expanded, 
 .entity-list-item, .pv-profile-section__card-item, .pv-profile-section__list-item, .poc-opportunities-card__footer{
-	background-color: var(--body-color) !important;
+	background-color: var(--primary-body-color) !important;
 }
 
 /*followers in interests, skills, job descriptions, about text, subtitles to jobs, header text, headings to sections, interests tab, highlights text*/
@@ -314,6 +337,13 @@ form{
 }
 
 
+/*ACTIVITY*/
+
+.pv-recent-activity-detail__header-container, .pv-recent-activity-top-card{
+	background-color: var(--primary-body-color) !important;
+}
+
+
 
 /*SETTINGS*/
 
@@ -322,8 +352,16 @@ form{
 	background-color: var(--backdrop-color) !important;
 }
 
+.annotation-container{
+	background-color: var(--secondary-body-color) !important;
+}
+
+.annotation-label{
+	color: var(--secondary-text-color) !important;
+}
+
 /*small text beside options*/
-.indicator, .state{
+.indicator, .state, .date{
 	color: var(--primary-text-color) !important;
 }
 
@@ -331,8 +369,19 @@ form{
 	color: var(--link-color) !important;
 }
 
+.disabled{
+	color: var(--disabled-text-color) !important;
+}
+
 /*enter password container*/
 /*CORRECT COLOR, BUT IS TRANSPARENT FOR SOME REASON*/
 .password-prompt{
+	background-color: var(--primary-body-color) !important;
+}
+
+
+/*HELP WIDGET*/
+
+.iph-widget__main-content-article{
 	background-color: var(--primary-body-color) !important;
 }
