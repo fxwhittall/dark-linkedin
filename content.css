@@ -206,7 +206,7 @@ option{
 
 /*comments*/
 .comments-post-meta__profile-link, .comments-highlights-comment-item-content-body, .comments-comment-item-content-body,
-.comments-reply-item-content-body{
+.comments-reply-item-content-body, .comments-highlighted-comment-item-content-body{
 	background-color: var(--secondary-body-color) !important;
 }
 
@@ -224,7 +224,7 @@ option{
 
 /*see more buttons*/
 .feed-shared-inline-show-more-text__see-more-less-toggle{
-	background-color: var(--primary-body-color) !important;
+	/*background-color: var(--primary-body-color) !important;*/
 	color: var(--primary-text-color) !important;
 }
 
