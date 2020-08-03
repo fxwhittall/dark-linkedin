@@ -133,6 +133,11 @@ option{
 	background-color: var(--primary-body-color) !important;
 }
 
+/*poll results*/
+.feed-shared-poll-option__bar-percent{
+	background-color: var(--secondary-body-color) !important;
+}
+
 
 /*message box overlay*/
 /*message tab, message open*/
@@ -297,6 +302,16 @@ option{
 	background-color: var(--hover-body-color) !important;
 }
 
+
+/*GROUPS*/
+
+.groups-listing{
+	background-color: var(--primary-body-color) !important;
+}
+
+.artdeco-entity-lockup__metadata{
+	color: var(--primary-text-color) !important;
+}
 
 
 /*JOBS*/
