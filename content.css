@@ -66,6 +66,10 @@ option{
 	color: var(--primary-text-color) !important;
 }
 
+.disabled{
+	color: var(--disabled-text-color) !important;
+}
+
 .search-global-typehead__icon{
 	color: var(--secondary-text-color) !important;
 }
@@ -251,11 +255,26 @@ option{
 }
 
 
+/*STORIES*/
+
+.feed-storyline-feed__update-overlay{
+	background-color: var(--primary-body-color) !important;
+}
+
+.feed-storyline-feed__info-card, .update-outlet, .feed-shared-article__lockup{
+	background-color: var(--secondary-body-color) !important;
+}
+
+.feed-storyline-feed__summary *{
+	color: var(--secondary-text-color) !important;
+}
+
+
 
 /*MY NETWORK*/
 
 /*left box in network page, your network rows, add personal contacts form*/
-.mn-community-summary, .mn-connection-card, .mn-abi-form__container{
+.mn-community-summary, .mn-connection-card, .mn-abi-form__container, .mn-connection-card__picture{
 	background-color: var(--primary-body-color) !important;
 }
 
@@ -283,7 +302,7 @@ option{
 /*JOBS*/
 
 /*job search box, jobs rectangle, squares with individual jobs*/
-.jobs-box, .jobs-blended-container, .job-card{
+.jobs-box, .jobs-blended-container, .job-card, .jobs-home-open-to-banner{
 	background-color: var(--primary-body-color) !important;
 }
 
@@ -309,6 +328,20 @@ option{
 	color: var(--tertiary-text-color) !important;
 }
 
+/*background*/
+.jobs-search-two-pane__wrapper{
+	background-color: var(--primary-body-color)!important;
+}
+
+/*job titles*/
+.job-card-container__link{
+	color: var(--link-color) !important;
+}
+
+/*locations, text in descriptions*/
+.artdeco-entity-lockup__caption, #job-details, .jobs-box__html-content, .jobs-description-details__list-item{
+	color: var(--primary-text-color) !important;
+}
 
 
 /*MESSAGING*/
@@ -393,6 +426,7 @@ option{
 	background-color: var(--primary-body-color) !important;
 }
 
+
 /*ACTIVITY*/
 
 .pv-recent-activity-detail__header-container, .pv-recent-activity-top-card{
@@ -427,10 +461,6 @@ option{
 
 .handle{
 	color: var(--link-color) !important;
-}
-
-.disabled{
-	color: var(--disabled-text-color) !important;
 }
 
 .pagination-link{
