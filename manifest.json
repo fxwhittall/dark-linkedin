@@ -11,7 +11,7 @@
   "content_scripts": [
       {
           "css": ["content.css"],
-          "matches": ["https://*.linkedin.com/*"]
+          "matches": ["https://*.linkedin.com/feed/*", "https://*.linkedin.com/notifications/*", "https://*.linkedin.com/mynetwork/*", "https://*.linkedin.com/jobs/*", "https://*.linkedin.com/messaging/*", "https://*.linkedin.com/in/*", "https://*.linkedin.com/company/*", "https://*.linkedin.com/school/*", "https://*.linkedin.com/search/*", "https://*.linkedin.com/psettings/*", "https://*.linkedin.com/public-profile/*", "https://*.linkedin.com/groups/*"]
       }
   ],
   "permissions": [

@@ -246,7 +246,7 @@ option{
 }
 
 /*left bar followed hashtags and groups, right bar news headlines*/
-.feed-shared-interest-package__entity-item:hover, .feed-shared-news-module__storyline:hover{
+.feed-shared-interest-package__entity-item:hover, .feed-shared-news-module__storyline:hover, .learning-top-courses__course:hover{
 	background-color: var(--hover-body-color) !important;
 }
 
@@ -351,9 +351,10 @@ option{
 
 /*PROFILE*/
 
-/*sections in page, header when scrolled down, boxes in profile, expanded skills, education, certifications*/
+/*sections in page, header when scrolled down, boxes in profile, expanded skills, education, certifications, edit dropdown*/
 .pv-profile-section, .pv-profile-sticky-header, .pv-dashboard-section__card, .pv-skill-categories-section__expanded, 
-.entity-list-item, .pv-profile-section__card-item, .pv-profile-section__list-item, .poc-opportunities-card__footer{
+.entity-list-item, .pv-profile-section__card-item, .pv-profile-section__list-item, .poc-opportunities-card__footer,
+.pe-hub-card, .pe-hub-drawer__list{
 	background-color: var(--primary-body-color) !important;
 }
 
@@ -385,6 +386,12 @@ option{
 	color: var(--primary-text-color) !important;
 }
 
+
+/*ORGANIZAION*/
+
+.org-sticky-top-card--is-showing{
+	background-color: var(--primary-body-color) !important;
+}
 
 /*ACTIVITY*/
 
