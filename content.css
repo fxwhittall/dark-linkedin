@@ -339,7 +339,7 @@ option{
 }
 
 /*locations, text in descriptions*/
-.artdeco-entity-lockup__caption, #job-details, .jobs-box__html-content, .jobs-description-details__list-item{
+.artdeco-entity-lockup__caption, .jobs-box__html-content *, .jobs-description-details__list-item{
 	color: var(--primary-text-color) !important;
 }
 
