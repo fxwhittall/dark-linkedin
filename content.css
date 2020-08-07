@@ -74,8 +74,8 @@ option{
 	color: var(--secondary-text-color) !important;
 }
 
-/*icons, send icon*/
-.artdeco-button__icon, .send-privately-icon{
+/*icons, send icon, toggle switches*/
+.artdeco-button__icon, .send-privately-icon, .artdeco-toggle__text{
 	color: var(--primary-text-color) !important;
 }
 
@@ -302,6 +302,19 @@ option{
 	background-color: var(--hover-body-color) !important;
 }
 
+/*headers in various pages*/
+.abi-saved-contacts__header, .feed-follow-nav, .container, .feed-shared-following-filter__main-btn-filter{
+	background-color: var(--primary-body-color) !important;
+}
+
+/*filters*/
+.feed-shared-following-filter--active{
+	background-color: var(--secondary-body-color) !important;
+}
+
+.feed-shared-following-filter__body, .feed-shared-following-filter__count{
+	color: var(--secondary-text-color) !important;
+}
 
 /*GROUPS*/
 
@@ -311,6 +324,11 @@ option{
 
 .artdeco-entity-lockup__metadata{
 	color: var(--primary-text-color) !important;
+}
+
+.groups-requests__info{
+	background-color: var(--secondary-body-color) !important;
+	color: var(--secondary-text-color) !important;
 }
 
 
