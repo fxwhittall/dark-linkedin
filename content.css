@@ -51,7 +51,11 @@ select:focus{
 } 
 
 option{
-	background-color: var(--secondary-body-color);
+	background-color: inherit;
+}
+
+input::placeholder{
+	color: var(--primary-text-color) !important;
 }
 
 #app__container, .footer__base{
@@ -233,7 +237,7 @@ option{
 
 /*see more buttons*/
 .feed-shared-inline-show-more-text__see-more-less-toggle{
-	/*background-color: var(--primary-body-color) !important;*/
+	background-color: inherit !important;
 	color: var(--primary-text-color) !important;
 }
 
@@ -483,7 +487,7 @@ option{
 	background-color: var(--secondary-body-color) !important;
 }
 
-.annotation-label{
+.annotation-label, .secondary-description{
 	color: var(--secondary-text-color) !important;
 }
 
@@ -507,9 +511,17 @@ option{
 }
 
 
-
 /*HELP WIDGET*/
 
-.iph-widget__main-content-article{
+.iph-widget__main-content-article, .iph-widget__search-container--results{
+	background-color: var(--primary-body-color) !important;
+}
+
+.iph-widget__submit-search{
+	background-color: var(--tertiary-body-color) !important;
+}
+
+/*HELP FORUM*/
+.browse-flow-content-container{
 	background-color: var(--primary-body-color) !important;
 }
